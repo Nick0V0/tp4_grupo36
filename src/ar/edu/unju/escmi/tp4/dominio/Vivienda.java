@@ -29,4 +29,40 @@ public class Vivienda extends Inmueble {
 		System.out.println("Estado: " + disponible);
 	}
 
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+
+	public int getHabitaciones() {
+		return habitaciones;
+	}
+
+
+	public void setHabitaciones(int habitaciones) {
+		this.habitaciones = habitaciones;
+	}
+
+
+	public double getPrecioAlquiler() {
+		return precioAlquiler;
+	}
+
+
+	public void setPrecioAlquiler(double precioAlquiler) {
+		this.precioAlquiler = precioAlquiler;
+	}
+
+
+	public Boolean isDisponible() {
+		return this.disponible;
+	}
+
+
 }

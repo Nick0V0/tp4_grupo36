@@ -63,6 +63,9 @@ public class Terreno extends Inmueble{
 		this.precioVenta = precioVenta;
 	}
 	
+	public Boolean isDisponible() {
+		return this.disponible;
+	}
 	
 	
 }
