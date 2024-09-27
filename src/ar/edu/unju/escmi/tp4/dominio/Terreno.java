@@ -29,4 +29,8 @@ public class Terreno extends Inmueble{
 		System.out.println("Precio Venta $: " + precioVenta);
 		System.out.println("Estado: " + disponible);
 	}
+
+	public double getPrecioVenta() {
+		return precioVenta;
+	}
 }
