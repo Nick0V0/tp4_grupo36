@@ -1,15 +1,24 @@
 package ar.edu.unju.escmi.tp4.dominio;
 
 public class Cliente {
-	public String nombre;
-	public String apellido;
-	public String dni;
-	public String telefono;
-	public String direccion;
-	public String email;
-	public Cliente() {
+	private String nombre;
+	private String apellido;
+	private String dni;
+	private String telefono;
+	private String direccion;
+	private String email;
+	public void mostrarDatos(Cliente cliente) {
+		System.out.println("Nombre:"+nombre);
+		System.out.println("Apellido:" + apellido);
+		System.out.println("DNI:" +dni);
+		System.out.println("Telefono"+telefono);
+		System.out.println("Direccion"+direccion);
+		System.out.println("Email"+email);
+	}
+	private Cliente() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 	public Cliente(String nombre, String apellido, String dni, String telefono, String direccion, String email) {
 		super();
@@ -21,7 +30,54 @@ public class Cliente {
 		this.email = email;
 	}
 
-	public static void mostrarDatos() {
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getDni() {
+		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	};
 	
 	
