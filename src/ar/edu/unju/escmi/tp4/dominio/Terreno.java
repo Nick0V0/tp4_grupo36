@@ -28,5 +28,41 @@ public class Terreno extends Inmueble{
 		System.out.println("Superficie: " + superficie);
 		System.out.println("Precio Venta $: " + precioVenta);
 		System.out.println("Estado: " + disponible);
+	
 	}
+
+	public double getLatitud() {
+		return latitud;
+	}
+
+	public void setLatitud(double latitud) {
+		this.latitud = latitud;
+	}
+
+	public double getLongitud() {
+		return longitud;
+	}
+
+	public void setLongitud(double longitud) {
+		this.longitud = longitud;
+	}
+
+	public double getSuperficie() {
+		return superficie;
+	}
+
+	public void setSuperficie(double superficie) {
+		this.superficie = superficie;
+	}
+
+	public double getPrecioVenta() {
+		return precioVenta;
+	}
+
+	public void setPrecioVenta(double precioVenta) {
+		this.precioVenta = precioVenta;
+	}
+	
+	
+	
 }
