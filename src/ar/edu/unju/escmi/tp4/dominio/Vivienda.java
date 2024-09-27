@@ -1,5 +1,5 @@
 package ar.edu.unju.escmi.tp4.dominio;
 
-public class Vivienda {
+public class Vivienda extends Inmueble {
 
 }
