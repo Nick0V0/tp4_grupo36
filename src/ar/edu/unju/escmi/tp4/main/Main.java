@@ -1,7 +1,11 @@
-package ar.edu.unju.escmi.tp4.dominio;
+package ar.edu.unju.escmi.tp4.main;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import ar.edu.unju.escmi.tp4.dominio.Cliente;
+import ar.edu.unju.escmi.tp4.dominio.Terreno;
+import ar.edu.unju.escmi.tp4.dominio.Vivienda;
+
 
 public class Main {
     // Listas para almacenar los datos de los inmuebles, clientes, y ventas
@@ -131,8 +135,8 @@ public class Main {
         int codigo = scanner.nextInt();
 
         for (Vivienda vivienda : viviendas) {
-            if (vivienda.codigo == codigo && vivienda.disponible) {
-                vivienda.disponible = false;
+            if (vivienda.getCodigo() == codigo && vivienda.isDisponible()) {
+                vivienda.setDisponible(false);
                 viviendasAlquiladas.add(vivienda);
                 System.out.println("Vivienda alquilada exitosamente.");
                 return;
@@ -146,8 +150,8 @@ public class Main {
         double codigo = scanner.nextDouble();
 
         for (Terreno terreno : terrenos) {
-            if (terreno.codigo == codigo && terreno.disponible) {
-                terreno.disponible = false;
+            if (terreno.getCodigo() == codigo && terreno.isDisponible()) {
+                terreno.setDisponible(false);
                 terrenosVendidos.add(terreno);
                 totalVentasTerrenos += terreno.getPrecioVenta();
                 System.out.println("Terreno vendido exitosamente.");
@@ -164,14 +168,14 @@ public class Main {
         if (tipo == 1) {
             System.out.println("Viviendas disponibles:");
             for (Vivienda vivienda : viviendas) {
-                if (vivienda.disponible) {
+                if (vivienda.isDisponible()) {
                     vivienda.mostrarDatos();
                 }
             }
         } else if (tipo == 2) {
             System.out.println("Terrenos disponibles:");
             for (Terreno terreno : terrenos) {
-                if (terreno.disponible) {
+                if (terreno.isDisponible()) {
                     terreno.mostrarDatos();
                 }
             }

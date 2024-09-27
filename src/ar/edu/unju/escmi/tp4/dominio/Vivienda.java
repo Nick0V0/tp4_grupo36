@@ -22,11 +22,11 @@ public class Vivienda extends Inmueble {
 	@Override
 	public void mostrarDatos() {
 		// TODO Auto-generated method stub
-		System.out.println("Vivienda: " + codigo);
+		System.out.println("Vivienda: " + getCodigo());
 		System.out.println("Direccion: " + direccion);
 		System.out.println("Habitaciones: " + habitaciones);
 		System.out.println("Precio Alquiler $: " + precioAlquiler);
-		System.out.println("Estado: " + disponible);
+		System.out.println("Estado: " + isDisponible());
 	}
 
 }

@@ -22,12 +22,12 @@ public class Terreno extends Inmueble{
 	@Override
 	public void mostrarDatos() {
 		// TODO Auto-generated method stub
-		System.out.println("Terreno: " + codigo);
+		System.out.println("Terreno: " + getCodigo());
 		System.out.println("Latitud: " + latitud);
 		System.out.println("Longitud: " + longitud);
 		System.out.println("Superficie: " + superficie);
 		System.out.println("Precio Venta $: " + precioVenta);
-		System.out.println("Estado: " + disponible);
+		System.out.println("Estado: " + isDisponible());
 	}
 
 	public double getPrecioVenta() {
