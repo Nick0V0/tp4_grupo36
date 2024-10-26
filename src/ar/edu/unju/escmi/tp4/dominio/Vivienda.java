@@ -57,12 +57,8 @@ public class Vivienda extends Inmueble {
 		this.precioAlquiler = precioAlquiler;
 	}
 
+	
 
-	@Override
-	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	
 

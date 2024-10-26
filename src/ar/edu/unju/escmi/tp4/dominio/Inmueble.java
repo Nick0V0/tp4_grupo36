@@ -15,7 +15,7 @@ public abstract class Inmueble {
 		this.disponible = disponible;
 	}
 	
-	public abstract void mostrarDatos();
+	
 
 	public int getCodigo() {
 		return codigo;

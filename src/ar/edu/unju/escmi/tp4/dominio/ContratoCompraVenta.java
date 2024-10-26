@@ -7,14 +7,11 @@ public  class ContratoCompraVenta extends Contrato{
 	private double impuestos;
 	private Terreno terreno;
 	
-	public double calcularMonto() {
+	public double calcularMontoTotal() {
 		return (terreno.getPrecioVenta() +  (terreno.getPrecioVenta()*impuestos)/100 );
 	}
 	
 
-	public ContratoCompraVenta() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public ContratoCompraVenta(Date fechaContrato, double impuestos, Cliente cliente, Inmobiliaria inmobiliaria,
 			Terreno terreno) {
@@ -55,11 +52,7 @@ public  class ContratoCompraVenta extends Contrato{
 	}
 
 
-	@Override
-	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 
 	

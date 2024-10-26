@@ -12,11 +12,6 @@ public class ContratoAlquiler extends Contrato {
 		return (precio + gastosInmobiliaria);
 	}
 	
-	public ContratoAlquiler() {
-		// TODO Auto-generated constructor stub
-	}
-	
-
 	public ContratoAlquiler(double precio, Date fechaContrato, int duracion, double gastosInmobiliaria,
 			Inmobiliaria inmobiliaria, Cliente cliente, Vivienda vivienda) {
 		super(cliente, inmobiliaria, fechaContrato);
@@ -58,11 +53,7 @@ public class ContratoAlquiler extends Contrato {
 		this.vivienda = vivienda;
 	}
 
-	@Override
-	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
-	}
+
 	
 	
 }
