@@ -214,6 +214,7 @@ public class Main {
             	vivienda.setDisponible(false);
             }
         }
+        System.out.println(v1.toString());
 		ContratoAlquiler contrato = new ContratoAlquiler(precio, fechaContrato, duracion, gastosInmobiliaria, inmobiliaria, c1, v1);
 		CollectionContrato.agregarContratoAlquiler(contrato);
     }
@@ -308,7 +309,7 @@ public class Main {
          System.out.println("2. Terrenos");
          int opcion = scanner.nextInt();
          
-         String tipoSeleccionado = "";
+    
          if (opcion == 1) {
          	CollectionInmueble.mostrarViviendasDisponibles();
          } else if (opcion == 2) {

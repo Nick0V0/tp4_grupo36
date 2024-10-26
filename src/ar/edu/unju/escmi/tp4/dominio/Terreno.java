@@ -58,11 +58,8 @@ public class Terreno extends Inmueble{
 		this.precioVenta = precioVenta;
 	}
 
-	@Override
-	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
-	}
+
+
 	
 	
 	
