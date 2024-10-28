@@ -24,7 +24,7 @@ public class CollectionInmueble {
         System.out.println("Terrenos disponibles para la venta:");
         for (Terreno terreno : terrenos) {
             if (terreno.isDisponible()) { 
-                terreno.toString();  
+                System.out.println(terreno.toString());  
             }
         }
     }
@@ -34,7 +34,7 @@ public class CollectionInmueble {
         System.out.println("Terrenos vendidos:");
         for (Terreno terreno : terrenos) {
             if (!terreno.isDisponible()) {  
-                terreno.toString(); 
+                System.out.println(terreno.toString()); 
                 totalVentas += terreno.getPrecioVenta(); 
             }
         }
@@ -44,7 +44,7 @@ public class CollectionInmueble {
 		System.out.println("Viviendas disponibles para alquiler:");
 		for (Vivienda vivienda : viviendas) {
 			if (vivienda.isDisponible()) {
-				vivienda.toString();
+				System.out.println(vivienda.toString());
 			}
 		}
 	}
@@ -53,7 +53,7 @@ public class CollectionInmueble {
 		System.out.println("Viviendas alquiladas:");
 		for (Vivienda vivienda : viviendas) {
 			if (!vivienda.isDisponible()) {
-				vivienda.toString();
+				System.out.println(vivienda.toString()); 
 			}
 		}
 	}
