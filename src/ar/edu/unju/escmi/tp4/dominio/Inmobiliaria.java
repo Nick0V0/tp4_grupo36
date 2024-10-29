@@ -21,8 +21,6 @@ public class Inmobiliaria {
 		System.out.println("Direccion"+direccion);
 	}
 
-	public static void mostrarDatos() {
-	}
 
 	public String getNombre() {
 		return nombre;
